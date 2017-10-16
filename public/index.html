@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GeoChat</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <input id="findMe" type="button" value="Find Me" onclick="moveTo(my.id)">
+
+  <div id="private">
+    <div id="privateMessages">Private Messages</div>
+    <div id="privateClose" onclick="closePrivate()">x</div>
+    <div id="privateContainer"></div>
+  </div>
+
+  <fieldset id="welcome">
+    <legend>Welcome</legend>
+    <input id="name" type="text" placeholder="loading..." maxlength="10">
+    <input type="button" value="Start" onclick="start()">
+  </fieldset>
+
+  <div id="input">
+   <input id="text" type="text" placeholder="global" maxlength="50">
+   <input type="button" value="Send" onclick="sendMessage()">
+ </div>
+
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyAqe05fizDCgGYU2-yR7LHbC36Ootgq968"></script>
+<script src="player.js"></script>
+<script src="client.js"></script>
+</body>
+</html>
